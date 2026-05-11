@@ -4,15 +4,32 @@ nocite: |
   @flochlay_deciphering_2020, @flochlay_cis-acting_2021, @flochlay_shared_2023
 ---
 
-Ici, vous trouverez mes publications scientifiques, ainsi que des articles de vulgarisation et des projets personnels.
+Ici, vous trouverez mes publications scientifiques, ainsi que des contenus de formation et des projets personnels.
 
 ## Publications scientifiques
 
 ::: {#refs}
 :::
 
-## Articles de vulgarisation
+## Formation et vulgarisation
 
+:::: {.columns style='display: flex'}
+
+::: {.column width=90%}
+<span class="ref">R avancé et introduction à Git</span>
+
+Contenu de la formation dispensée en 2026 aux étudiants du Master Économétrie appliquée de l'IAE Nantes, adapté de R. Nedellec.
+
+<i class="bi bi-link-45deg pink"></i> Code sur [GitHub](https://github.com/dagousket/r-advanced-git)
+
+<i class="bi bi-share-fill pink"></i> Site web déployée avec [GitHub Pages](https://dagousket.github.io/r-advanced-git/)
+:::
+
+::: {.column style='display: flex; align-items: center;'}
+![](https://github.com/dagousket/r-advanced-git/blob/5be6cad14cc5492581e74484c65b57b69b7c3a11/slides/images/collaboration.png?raw=true){width="90%" fig-align="center"}
+:::
+
+::::
 
 :::: {.columns style='display: flex'}
 
@@ -21,29 +38,67 @@ Ici, vous trouverez mes publications scientifiques, ainsi que des articles de vu
 :::
 
 ::: {.column width=90%}
-<span class="ref">Dompter son namespace avec un zest de suggest</span>
+<span class="ref">Dompter son namespace avec un zeste de suggest</span>
 
-<i class="bi bi-link-45deg pink"></i>  Article de blog sur [Rtask](https://rtask.thinkr.fr/fr/dompter-son-namespace-avec-un-zest-de-suggests/)
+<i class="bi bi-link-45deg pink"></i> Article de blog sur [Rtask](https://rtask.thinkr.fr/fr/dompter-son-namespace-avec-un-zest-de-suggests/)
 
-<i class="bi bi-share-fill pink"></i>  Présenté aux [Rencontres R 2024](https://github.com/Rencontres-R/Rencontres_R_2024/blob/main/Pr%C3%A9sentations/01_Mercredi/04_Courte%201/02_Floc'hlay_Swann_Pour%20un%20namespace%20tout%20en%20souplesse.html)
+<i class="bi bi-share-fill pink"></i> Présenté aux [Rencontres R 2024](https://github.com/Rencontres-R/Rencontres_R_2024/blob/main/Pr%C3%A9sentations/01_Mercredi/04_Courte%201/02_Floc'hlay_Swann_Pour%20un%20namespace%20tout%20en%20souplesse.html)
 
-<i class="bi bi-share-fill pink"></i>  Mentionné dans le podcast [R weekly](https://share.fireside.fm/episode/87RSVeFz+2xVMmpYZ)
+<i class="bi bi-share-fill pink"></i> Mentionné dans le podcast [R weekly](https://share.fireside.fm/episode/87RSVeFz+2xVMmpYZ)
 :::
 
 ::::
 
 ## Projets open-source
 
-<span class="ref">{lurex}: une application shiny pour les regex</span>
+:::: {.columns style='display: flex'}
 
-Cette application shiny permet de construire une regex depuis un module de sélection interactive. J'ai développé cette application comme un première approche ludique des expressions régulières, souvent peut appréciées des développeurs.
+::: {.column style='display: flex; align-items: center;'}
+![](https://github.com/dagousket/millefeuille/blob/main/recap.png?raw=true){width="90%" fig-align="center"}
+:::
+
+::: {.column width=90%}
+<span class="ref">{millefeuille} : un package python pour les coordonnées génomiques</span>
+
+J'ai développé ce package pour faciliter la conversion de coordonnées génomiques lors de [ma thèse](recherche.qmd#analyse-de-déséquilibre-allélique). Initialement écrit en R, je l'ai plus récemment converti en python et ajouté une architecture de test unitaire complète.
+
+<i class="bi bi-link-45deg pink"></i> Code sur [GitHub](https://github.com/dagousket/millefeuille)
+:::
+
+::::
+
+:::: {.columns style='display: flex'}
+
+::: {.column width=90%}
+<span class="ref">{abloc} : une application Python + Shiny pour le calcul de consommation d'air</span>
+
+J'ai développé ce package pour mon activité d'encadrante de plongée sous-marine en club. Cette application permet d'illustrer la relation entre la quantité d'air consommé et la profondeur d'évolution du plongeur.
+
+<i class="bi bi-link-45deg pink"></i> Code sur [GitHub](https://github.com/dagousket/abloc)
+
+<i class="bi bi-share-fill pink"></i> Application déployée avec [ShinyApps](https://dagousket.shinyapps.io/abloc/)
+:::
+
+::: {.column style='display: flex; align-items: center;'}
+![](media/abloc.png){width="90%" fig-align="center"}
+:::
+
+::::
+
+:::: {.columns style='display: flex'}
+
+::: {.column style='display: flex; align-items: center;'}
+![](media/lurex.png){width="90%" fig-align="center"}
+:::
+
+::: {.column width=90%}
+<span class="ref">{lurex} : une application R + Shiny pour les regex</span>
+
+Cette application permet de construire une regex depuis un module de sélection interactive. J'ai développé cette application comme une première approche ludique des expressions régulières. Je l'ai utilisé comme support pour tester le déploiement en Wasm.
 
 <i class="bi bi-link-45deg pink"></i> Code sur [GitHub](https://github.com/dagousket/lurex)
 
-<i class="bi bi-share-fill pink"></i> Application déployée avec [ShinyLive](https://dagousket.github.io/lurex/)
+<i class="bi bi-share-fill pink"></i> Application déployée avec [WebR et ShinyLive](https://dagousket.github.io/lurex/)
+:::
 
-<span class="ref">{millefeuille}: un package python pour les coordonnées génomiques</span>
-
-Ce package en cours de développment permet de manipuler des données génomiques et convertir certains formats entre eux (bed6, bed12, gff). Il est écrit en python, et possède une architecture de test unitaire complète.
-
-<i class="bi bi-link-45deg pink"></i> Code sur [GitHub](https://github.com/dagousket/millefeuille)
+::::

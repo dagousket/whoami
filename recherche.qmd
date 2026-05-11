@@ -6,48 +6,48 @@ Vous trouverez ici un résumé pour chacun de mes projets de recherche effectué
 
 ## Modélisation booléenne
 
-Dans le contexte du développement embryonnaire de l'oursin, j'ai cherché à mieux comprendre les intéractions entre différentes voies de signalisation.
+Dans le contexte du développement embryonnaire de l'oursin, j'ai cherché à mieux comprendre les interactions entre différentes voies de signalisation.
 
-Pour cela, j'ai construit un modèle logique incoporant les principaux régulateurs de l'axe dorso-ventral et leurs actions de régulation, extraites de la littérature existante (_e.g._ activation, inhibition).
+Pour cela, j'ai construit un modèle logique incorporant les principaux régulateurs de l'axe dorso-ventral et leurs actions de régulation, extraites de la littérature existante (_e.g._ activation, inhibition).
 
 J'ai ensuite utilisé ce modèle pour simuler des perturbations et proposer des hypothèses de régulation. Les perturbations ont été réalisées sur un modèle classique et également sur un modèle dit _cinétique_ qui incorpore une dimension temporelle via un algorithme de gillespie.
 
 ![Image d'embryon d'oursin (haut) et extrait du  modèle booléen de régulation de l'axe dorso-ventral (bas).](media/paracentrotus.png){#fig-paracentrotus width=60%}
 
-<span class="vert">**Résultat:** Nos simulations suggèrent que la hiérarchie temporelle entre les deux voies de signalisation est critique pour l'établissement de l'axe dorso-ventral. Cette hypothèse a été validée expérimentalement en laboratoire.</span>
+<span class="vert">**Résultat :** Nos simulations suggèrent que la hiérarchie temporelle entre les deux voies de signalisation est critique pour l'établissement de l'axe dorso-ventral. Cette hypothèse a été validée expérimentalement en laboratoire.</span>
 
-<i class="bi bi-link-45deg pink"></i>  [Floc'hlay et al. 2020](https://doi.org/10.1242/dev.189944)
+<i class="bi bi-link-45deg pink"></i> [Floc'hlay et al. 2020](https://doi.org/10.1242/dev.189944)
 
-<i class="bi bi-youtube pink"></i> [Présentation](https://www.youtube.com/watch?v=9IjIBkmCa5g) au webminaire **Development presents...**
+<i class="bi bi-youtube pink"></i> [Présentation](https://www.youtube.com/watch?v=9IjIBkmCa5g) au webinaire **Development presents...**
 
 ## Analyse de déséquilibre allélique
 
-Je me suis interessée à la régulation du dévelopement embryonnaire de la drosophile, au niveau transcriptionnel (ARN) et épigénétique (chromatine, marqueurs épigénétiques).
+Je me suis intéressée à la régulation du développement embryonnaire de la drosophile, au niveau transcriptionnel (ARN) et épigénétique (chromatine, marqueurs épigénétiques).
 
 Grâce à la génération d'une banque de croisements issus de lignées homozygotes, nous pouvons estimer l'activité de chaque allèle via la détection des polymorphismes de nucléotides simples (SNPs).
 
-Pour chaque niveau de régulation (ARN, chromatine, _etc_), on obtient un ratio d'expression allélique père/mère. Pour chaque région du génome, j'ai analysé la corrélatin de ces ratios entre chaque couche de régulation.
+Pour chaque niveau de régulation (ARN, chromatine, _etc_), on obtient un ratio d'expression allélique père/mère. Pour chaque région du génome, j'ai analysé la corrélation de ces ratios entre chaque couche de régulation.
 
 Afin d'éviter les biais de corrélations indirectes, je me suis basée sur une étude des corrélations partielles, où seuls les résidus de régression linéaire sont pris en compte.
 
-![Une régression linéraire est réalisé sur les résidus de deux observations relative à une troisième observation (le facteur confondant). La corrélation partielle ainsi calculée est significative pour une seule des deux régressions (à droite).](media/allelic.png){#fig-allele width=70%}
+![Une régression linéaire est réalisée sur les résidus de deux observations relatives à une troisième observation (le facteur confondant). La corrélation partielle ainsi calculée est significative pour une seule des deux régressions (à droite).](media/allelic.png){#fig-allele width=70%}
 
-<span class="vert">**Résultat:** Les corrélations simples sont significatives pour toutes les relations mesurées. Cependant, les corrélations partielles démontrent qu'il existe un lien de régulation direct uniquement pour cinq des neuf paires de mesures étudiées.</span>
+<span class="vert">**Résultat :** Les corrélations simples sont significatives pour toutes les relations mesurées. Cependant, les corrélations partielles démontrent qu'il existe un lien de régulation direct uniquement pour cinq des neuf paires de mesures étudiées.</span>
 
 <i class="bi bi-link-45deg pink"></i> [Floc'hlay et al. 2021](https://doi.org/10.1101/gr.266338.120)
 
 <i class="bi bi-youtube pink"></i> [Présentation](https://www.youtube.com/watch?v=EwP8VSiUomI) à la conférence **ISMB/ECCB**
 
-## Inférence de réseaux de régulation
+## Inférence de réseaux de régulation multi-omiques
 
-Grâce à la génération de données multiomiques en cellule unique, j'ai étudié la régulation transcriptionnelle chez l'embryon de drosophile. Plus particulièrement, j'ai utilisé un jeu de données issus d'embryons sains et d'embryons ayant subi une ablation du disque imaginal de l'aile.
+Grâce à la génération de données multi-omiques en cellule unique, j'ai étudié la régulation transcriptionnelle chez l'embryon de drosophile. Plus particulièrement, j'ai utilisé un jeu de données issu d'embryons sains et d'embryons ayant subi une ablation du disque imaginal de l'aile.
 
-La forte volumétrie du jeu de données permet d'utiliser un algorithme d'inférence de réseau. Cet algorithme permet d'associer un trio composé d'un facteur de transcription, de régions régulatrices et de gènes cibles. Le lien entre un facteur de transcription et une région régulatrice et détecté selon le principe d'enrichissement de motif de liaison. Les liens entre régions régulatrices et gènes cibles sont eux établis par la détection de co-activité par Random Forest.
+La forte volumétrie du jeu de données permet d'utiliser un algorithme d'inférence de réseau. Cet algorithme permet d'associer un trio composé d'un facteur de transcription, de régions régulatrices et de gènes cibles. Le lien entre un facteur de transcription et une région régulatrice est détecté selon le principe d'enrichissement de motif de liaison. Les liens entre régions régulatrices et gènes cibles sont eux, établis par la détection de co-activité par Random Forest.
 
 Le réseau de régulation ainsi obtenu est utilisé pour calculer un score global d'activité par cellule, pour chaque facteur de transcription, en fonction de l'activité de ses régions et gènes cibles.
 
-![Un example de trio de régulation motif-région-gène (haut) et son score calculé sur chaque cellule du jeu de données, en fonction de l'activité des gènes et des régions cibles (bas).](media/wound.png){width=70%}
+![Un exemple de trio de régulation motif-région-gène (haut) et son score calculé sur chaque cellule du jeu de données, en fonction de l'activité des gènes et des régions cibles (bas).](media/wound.png){width=70%}
 
-<span class="vert">**Résultat:** Les réseaux de régulation détectés confirment les connaissances établies sur le dévelopement du disque imaginal. Les données provenant d'embryons avec ablation produisent deux nouvelles populations de cellules, arborant une activité transcriptionnelle liée à la réponse au stress et à la prolifération. Une des deux populations comporte notamment des marqueurs de sénécence cellulaire, ce qui suggère une similitude avec les modèles tumoraux.</span>
+<span class="vert">**Résultat :** Les réseaux de régulation détectés confirment les connaissances établies sur le développement du disque imaginal. Les données provenant d'embryons avec ablation produisent deux nouvelles populations de cellules, arborant une activité transcriptionnelle liée à la réponse au stress et à la prolifération. Une des deux populations comporte notamment des marqueurs de sénescence cellulaire, ce qui suggère une similitude avec les modèles tumoraux.</span>
 
 <i class="bi bi-link-45deg pink"></i> [Floc'hlay et al. 2023](https://doi.org/10.7554/elife.81173)
