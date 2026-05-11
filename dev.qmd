@@ -6,15 +6,15 @@ Ici se trouve une sélection de mes projets réalisés sur R en tant que dévelo
 
 ## Conversion d'un modèle de projections démographiques
 
-Chaque année les données du recensement de la population sont publiées par l'INSEE et utilisée par le département de Loire-Atlantique pour projeter les évolutions démographiques à différentes échelles.
+Chaque année le département de Loire-Atlantique publie des fiches de projections démographiques à partir des données du recensement de la population (INSEE).
 
-Pour ce projet, j'ai converti un modèle de projection existant (VBA) en un package R, accompagné d'une couverture de test unitaire complète et d'une documentation technique (`pkgdown`) mises à jour automatiquement via GitLab CI/CD.
+Pour ce projet, j'ai converti un modèle de projection existant (VBA) en package R, accompagné d'une couverture de test complète et d'une documentation technique (`pkgdown`) mise à jour automatiquement via GitLab CI/CD.
 
-Dans un second temps, j'ai ajouté au package la possibilité de générer automatiquement l'ensemble des 28 fiches de projections en respectant la charte graphique du département.
+Dans un second temps, j'ai ajouté au package la possibilité de générer automatiquement l'ensemble des 28 fiches de projections. Cette étape utilise un template Typst respectant la charte graphique du département.
 
-![Une section de fiche de projection démographique. Chaque fiche est générée par Quarto à partir d'un template Typst est des données de projections stockées au format parquet.](media/44.png){#fig-dep width=70%}
+![Une section de fiche générée automatiquement par Quarto à partir des données de projections.](media/44.png){#fig-dep width=70%}
 
-<span class="vert">**Résultat :** Le temps total de mise à jour annuelle des fiches de projections est passé de plusieurs jours à 4 minutes. Le risque d'erreur a été minimisé par la suppression de toutes les étapes manuelles.</span>
+<span class="vert">**Résultat :** Le temps total de mise à jour annuelle des fiches de projections est passé de plusieurs jours à quatre minutes. Le risque d'erreur a été minimisé par la suppression de toutes les étapes manuelles.</span>
 
 <i class="bi bi-link-45deg pink"></i> [Lien fiches projections](https://observatoire.loire-atlantique.fr/44/les-statistiques/fiches-projections-demographiques-2022-2037/p1_12983)
 
@@ -42,7 +42,7 @@ Ce rapport contient les résultats sous forme de graphiques et de tableaux (ACP,
 
 <span class="vert">**Résultat :** L'utilisation de la nouvelle version de l'application a nettement réduit le temps dédié à la construction du rapport statistique, l'expérience utilisateur est fluidifiée tout en enrichissant le contenu graphique de l'application.</span>
 
-![Schéma de fonctionnement de l'application, avec un exemple de graphique de sortie (PCA loadings).](media/shinyapp.png){#fig-shiny width=70%}
+![Schéma de fonctionnement de l'application, avec un exemple de graphique de sortie.](media/shinyapp.png){#fig-shiny width=70%}
 
 ## Développement d'un package de présentation quarto
 
@@ -52,7 +52,7 @@ Comme les cours sont rédigés chapitre par chapitre, j'ai développé le packag
 
 J'ai rédigé sa documentation dans le but qu'il soit accessible à tout utilisateur de R. Pour les développeurs avancés, il est possible de personnaliser le résultat via l'ajout d'extensions et de paramètres d'entrée optionnels.
 
-![Le shéma d'action  du package: à partir de plusieurs fichiers quarto indépendants, on crée une seule présentation html regroupant l'ensemble du contenu original.](media/squash.png){#fig-squash width=90%}
+![Le shéma d'action du package : à partir de plusieurs fichiers quarto indépendants, on crée une seule présentation html regroupant l'ensemble du contenu original.](media/squash.png){#fig-squash width=90%}
 
 <span class="vert">**Résultat :** Le package {squash} est disponible en open-source. Il est testé, documenté et déployé en continu sur GitHub. Il est utilisé en routine chez ThinkR pour ses formations R.</span>
 
