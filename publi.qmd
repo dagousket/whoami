@@ -15,6 +15,24 @@ Ici, vous trouverez mes publications scientifiques, ainsi que des contenus de fo
 
 :::: {.columns style='display: flex'}
 
+::: {.column style='display: flex; align-items: center;'}
+![](media/rr26.png){width="90%" fig-align="center"}
+:::
+
+::: {.column width=90%}
+<span class="ref">Les frictions de la cohabitation R-Excel</span>
+
+Présentation de l'application `{migres}` pour faciliter le traitement des jeux de données Insee volumineux.
+
+<i class="bi bi-share-fill pink"></i> Présenté aux [Rencontres R 2025](https://rr2026.sciencesconf.org/712403)
+
+<i class="bi bi-award-fill pink"></i> Prix de la meilleure présentation courte
+:::
+
+::::
+
+:::: {.columns style='display: flex'}
+
 ::: {.column width=90%}
 <span class="ref">R avancé et introduction à Git</span>
 
@@ -70,6 +88,28 @@ J'ai développé ce package pour faciliter la conversion de coordonnées génomi
 :::: {.columns style='display: flex'}
 
 ::: {.column width=90%}
+<span class="ref">{migres} : une application pour faciliter l'analyse de jeux de données Insee</span>
+
+Cette application permet de manipuler les données à haute volumétrie de migrations résidentielles à partir d'un fichier parquet, et sans connaissances préalables de code.
+
+<i class="bi bi-link-45deg pink"></i> Code sur [GitHub](https://github.com/dagousket/migres)
+
+<i class="bi bi-share-fill pink"></i> Application déployée avec [ShinyApps](https://dagousket.shinyapps.io/migres/)
+:::
+
+::: {.column style='display: flex; align-items: center;'}
+![](media/migres.png){width="90%" fig-align="center"}
+:::
+
+::::
+
+:::: {.columns style='display: flex'}
+
+::: {.column style='display: flex; align-items: center;'}
+![](media/abloc.png){width="90%" fig-align="center"}
+:::
+
+::: {.column width=90%}
 <span class="ref">{abloc} : une application Python + Shiny pour le calcul de consommation d'air</span>
 
 J'ai développé ce package pour mon activité d'encadrante de plongée sous-marine en club. Cette application permet d'illustrer la relation entre la quantité d'air consommé et la profondeur d'évolution du plongeur.
@@ -79,17 +119,9 @@ J'ai développé ce package pour mon activité d'encadrante de plongée sous-mar
 <i class="bi bi-share-fill pink"></i> Application déployée avec [ShinyApps](https://dagousket.shinyapps.io/abloc/)
 :::
 
-::: {.column style='display: flex; align-items: center;'}
-![](media/abloc.png){width="90%" fig-align="center"}
-:::
-
 ::::
 
 :::: {.columns style='display: flex'}
-
-::: {.column style='display: flex; align-items: center;'}
-![](media/lurex.png){width="90%" fig-align="center"}
-:::
 
 ::: {.column width=90%}
 <span class="ref">{lurex} : une application R + Shiny pour les regex</span>
@@ -99,6 +131,10 @@ Cette application permet de construire une regex depuis un module de sélection 
 <i class="bi bi-link-45deg pink"></i> Code sur [GitHub](https://github.com/dagousket/lurex)
 
 <i class="bi bi-share-fill pink"></i> Application déployée avec [WebR et ShinyLive](https://dagousket.github.io/lurex/)
+:::
+
+::: {.column style='display: flex; align-items: center;'}
+![](media/lurex.png){width="90%" fig-align="center"}
 :::
 
 ::::
